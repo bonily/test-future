@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person form component shoul be render 1`] = `
+<div>
+  <h2>
+    Добавить нового пользователя
+  </h2>
+  <form
+    action="#"
+    aria-label="find-form"
+    name="Find-form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="id"
+    >
+      Id
+    </label>
+    <input
+      aria-label="id"
+      className="sc-bdfBwQ goHstC"
+      id="id"
+      name="id"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="0"
+      type="number"
+      value=""
+    />
+    <label
+      htmlFor="firstName"
+    >
+      First Name
+    </label>
+    <input
+      aria-label="firstName"
+      className="sc-bdfBwQ goHstC"
+      id="firstName"
+      name="firstName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="John"
+      value=""
+    />
+    <label
+      htmlFor="lastName"
+    >
+      Last Name
+    </label>
+    <input
+      aria-label="lastName"
+      className="sc-bdfBwQ goHstC"
+      id="lastName"
+      name="lastName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Doe"
+      value=""
+    />
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      aria-label="email"
+      className="sc-bdfBwQ goHstC"
+      id="email"
+      name="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="john@acme.com"
+      type="email"
+      value=""
+    />
+    <label
+      htmlFor="phone"
+    >
+      Phone
+    </label>
+    <input
+      aria-label="phone"
+      className="sc-bdfBwQ goHstC"
+      id="phone"
+      name="phone"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="(000)000-00-00"
+      type="tel"
+      value=""
+    />
+    <input
+      aria-label="streetAddress"
+      className="sc-bdfBwQ goHstC"
+      id="streetAddress"
+      name="streetAddress"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value=""
+    />
+    <input
+      aria-label="city"
+      className="sc-bdfBwQ goHstC"
+      id="city"
+      name="city"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value=""
+    />
+    <input
+      aria-label="state"
+      className="sc-bdfBwQ goHstC"
+      id="state"
+      name="state"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value=""
+    />
+    <input
+      aria-label="zip"
+      className="sc-bdfBwQ goHstC"
+      id="zip"
+      name="zip"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value=""
+    />
+    <input
+      aria-label="description"
+      className="sc-bdfBwQ goHstC"
+      id="description"
+      name="description"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value=""
+    />
+    <button
+      disabled={true}
+      type="submit"
+    >
+      Добавить нового пользователя
+    </button>
+  </form>
+</div>
+`;

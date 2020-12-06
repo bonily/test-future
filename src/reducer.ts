@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import {ThunkAction} from 'redux-thunk';
 import {Action} from 'redux';
 import {PersonType} from './types';
@@ -71,7 +70,7 @@ const ActionCreator = {
   }
 };
 
-type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppStateType, unknown, Action<string>>
+type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppStateType, any, Action<string>>
 
 const Operation = {
   loadPersons: (size: string) => (dispatch: (arg0: { type: string; payload?: PersonType[]; }) => void, _getState: () => void, api: { get: (arg0: string) => Promise<PersonType[]>; }) => {
@@ -103,7 +102,6 @@ const reducer = (state: AppStateType = initialState, action: any): AppStateType 
         isLoaded: true
       });
     case ActionType.CHANGE_SORT_TYPE:
-      console.log(action.payload);
       return extend(state, {
         sortType: action.payload[0],
         isSortAscending: action.payload[1]
@@ -113,7 +111,6 @@ const reducer = (state: AppStateType = initialState, action: any): AppStateType 
         inputValue: action.payload
       });
     case ActionType.SET_ERROR:
-      console.log(action.payload);
       return extend(state, {
         error: action.payload
       });
@@ -125,7 +122,6 @@ const reducer = (state: AppStateType = initialState, action: any): AppStateType 
       const newPerson = castFormValueToPersonType(action.payload);
       const newPersons = state.persons.slice();
       newPersons.unshift(newPerson);
-      console.log(newPersons);
       return extend(state, {
         persons: newPersons,
       });

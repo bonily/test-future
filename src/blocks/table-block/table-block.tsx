@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import React from 'react';
 import styled from 'styled-components';
 import {PersonType} from '../../types';
@@ -30,6 +28,7 @@ interface Props {
   onSortTitleClick: (sortType: string, isAscending: boolean) => void,
   onPersonTrClick: (id: number) => void
 }
+
 
 const TableBlock: React.FunctionComponent<Props> = (props: Props) => {
   const {persons, sortType, onSortTitleClick, onPersonTrClick} = props;

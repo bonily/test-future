@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App on the start should render start window  1`] = `
+<div
+  className="sc-kEjbxe kuoOcw"
+>
+  <button
+    className="sc-iqHYGH kwhEwP"
+    onClick={[Function]}
+  >
+    Полный список
+  </button>
+  <button
+    className="sc-iqHYGH kwhEwP"
+    onClick={[Function]}
+  >
+    Короткий список
+  </button>
+</div>
+`;
+
+exports[`App with persons should render table block  1`] = `
+Array [
+  " ",
+  <form
+    className="sc-hBEYos imFMyH"
+  >
+    <input
+      className="sc-fodVxV iJMQbK"
+      onChange={[Function]}
+      placeholder="Поиск"
+      type="text"
+    />
+    <button
+      className="sc-fFubgz JKHnB"
+      name="find-button"
+      onClick={[Function]}
+      type="submit"
+    >
+      Найти
+    </button>
+    <button
+      className="sc-fFubgz JKHnB"
+      id="new-person"
+      onClick={[Function]}
+      type="button"
+    >
+      Добавить
+    </button>
+  </form>,
+  <table
+    className="sc-gKsewC dCXYBn"
+  >
+    <colgroup>
+      <col
+        style={
+          Object {
+            "background": "yellow",
+          }
+        }
+      />
+      <col />
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr
+        className="sc-iBPRYJ"
+      >
+        <th
+          className="sc-eCssSg hBBrPS"
+          onClick={[Function]}
+        >
+          id
+          <img
+            className="sc-jSgupP diBDkZ"
+            height="18px"
+            src="./img/sort-icon.svg"
+            width="18px"
+          />
+        </th>
+        <th
+          className="sc-eCssSg hBBrPS"
+          onClick={[Function]}
+        >
+          firstName
+          <img
+            className="sc-jSgupP diBDkZ"
+            height="18px"
+            src="./img/sort-icon.svg"
+            width="18px"
+          />
+        </th>
+        <th
+          className="sc-eCssSg hBBrPS"
+          onClick={[Function]}
+        >
+          lastName
+          <img
+            className="sc-jSgupP diBDkZ"
+            height="18px"
+            src="./img/sort-icon.svg"
+            width="18px"
+          />
+        </th>
+        <th
+          className="sc-eCssSg hBBrPS"
+          onClick={[Function]}
+        >
+          email
+          <img
+            className="sc-jSgupP diBDkZ"
+            height="18px"
+            src="./img/sort-icon.svg"
+            width="18px"
+          />
+        </th>
+        <th
+          className="sc-eCssSg hBBrPS"
+          onClick={[Function]}
+        >
+          phone
+          <img
+            className="sc-jSgupP diBDkZ"
+            height="18px"
+            src="./img/sort-icon.svg"
+            width="18px"
+          />
+        </th>
+      </tr>
+      <tr
+        className="sc-iBPRYJ"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          714
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          Jeri
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          Wittcop
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          MRamsey@scelerisque.com
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          (731)368-3302
+        </td>
+      </tr>
+      <tr
+        className="sc-iBPRYJ"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          120
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          Bonya
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          Wittcop
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          MRamsey@scelerisque.com
+        </td>
+        <td
+          className="sc-fubCfw gJkPIV"
+        >
+          (731)368-3302
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <nav
+    className="sc-bdfBwQ cvWBOr"
+  >
+    <ul
+      className="sc-gsTCUz kIEiKe"
+    >
+      <li
+        className="sc-dlfnbm iKQuvh"
+      >
+        <a
+          className="sc-hKgILt gWxVff"
+          href="#!"
+          onClick={[Function]}
+        >
+          1
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;

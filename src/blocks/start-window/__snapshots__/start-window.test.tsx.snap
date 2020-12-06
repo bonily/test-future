@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start window should be rendered 1`] = `
+<div
+  className="sc-bdfBwQ ebBNNL"
+>
+  <button
+    className="sc-gsTCUz eeeOZp"
+    onClick={[Function]}
+  >
+    Полный список
+  </button>
+  <button
+    className="sc-gsTCUz eeeOZp"
+    onClick={[Function]}
+  >
+    Короткий список
+  </button>
+</div>
+`;

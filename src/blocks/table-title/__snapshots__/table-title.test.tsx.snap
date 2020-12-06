@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Block should be render when sort type != title 1`] = `
+<th
+  className="sc-bdfBwQ khoPZA"
+  onClick={[Function]}
+>
+  email
+  <img
+    className="sc-gsTCUz bqElTy"
+    height="18px"
+    src="./img/sort-icon.svg"
+    width="18px"
+  />
+</th>
+`;
+
+exports[`Title Block should be render when sort type = title 1`] = `
+<th
+  className="sc-bdfBwQ khoPZA"
+  onClick={[Function]}
+>
+  email
+  <img
+    className="sc-gsTCUz bqElTy"
+    height="18px"
+    src="./img/sort-icon--active.svg"
+    width="18px"
+  />
+</th>
+`;

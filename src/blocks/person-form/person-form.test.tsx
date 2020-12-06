@@ -1,14 +1,15 @@
 import React from "react";
 import * as renderer from "react-test-renderer";
 import {noop} from "../../common";
-import Header from "./header";
+import PersonForm from "./person-form";
 
-it(`Header should render Header block`, () => {
+
+it(`Person form component shoul be render`, () => {
   const tree = renderer
-  .create(<Header
+  .create(<PersonForm
     onAddNewPersonButtonClick = {noop}
-    onInputChange = {noop}
-  />)
-  .toJSON();
+    setInputFormActive = {noop}
+  />).toJSON();
   expect(tree).toMatchSnapshot();
 });
+

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import Persons from '../persons/persons';
 import {PersonType} from '../../types';
@@ -17,7 +16,6 @@ interface MapStatePropsType {
   inputValue: string,
   isStart: boolean
 }
-
 
 interface MapDispatchToPropsType {
   onSortTitleClick: (sortType: string, isAscending: boolean) => void,
@@ -49,6 +47,7 @@ const App: React.FunctionComponent<MapStatePropsType & MapDispatchToPropsType> =
   );
 };
 
+
 const mapStateToProps = (state: AppStateType): MapStatePropsType => ({
   persons: getSortedPerson(state),
   sortType: getSortType(state),
@@ -56,7 +55,6 @@ const mapStateToProps = (state: AppStateType): MapStatePropsType => ({
   inputValue: state.inputValue,
   isStart: state.isStart
 });
-
 
 const mapDispatchToProps = (dispath : any): MapDispatchToPropsType => ({
   onDataSizeButtonClick(sizeType) {

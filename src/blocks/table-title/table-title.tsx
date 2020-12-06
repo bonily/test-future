@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-/* eslint-disable no-console */
 import styled from 'styled-components';
+
 
 const Th = styled.th`
   padding: 5px;
@@ -21,11 +21,13 @@ const Img = styled.img<{isAscending: boolean}>`
   transform: ${({isAscending}) => isAscending ? `rotate(180deg)` : `none`};
 `;
 
+
 interface Props {
   title: string,
   sortType: string,
   onSortTitleClick: (sortType: string, isAscending: boolean) => void
 }
+
 
 const TableTitle: React.FunctionComponent<Props> = (props: Props) =>{
   const {title, sortType, onSortTitleClick} = props;

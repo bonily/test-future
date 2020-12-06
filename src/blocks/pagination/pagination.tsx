@@ -45,6 +45,7 @@ const A = styled.a`
   text-decoration: none;
 `;
 
+
 interface Props {
   personsPerPage: number,
   totalPersons: number,

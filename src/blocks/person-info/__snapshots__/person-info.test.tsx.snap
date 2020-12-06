@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person info should bs rendered 1`] = `
+<div
+  className="sc-bdfBwQ"
+>
+  <p
+    className="sc-gsTCUz"
+  >
+    Выбран пользователь 
+    <b>
+      Bonya Wittcop
+    </b>
+    <br />
+    Описание:
+    <textarea
+      readOnly={true}
+      value="pulvinar magna convallis quis porta adipiscing mi porta vestibulum elit amet ipsum egestas tortor suspendisse mattis rutrum lacus vel libero vitae sit dolor molestie lorem sed massa lacus lacus vitae placerat et"
+    >
+      pulvinar magna convallis quis porta adipiscing mi porta vestibulum elit amet ipsum egestas tortor suspendisse mattis rutrum lacus vel libero vitae sit dolor molestie lorem sed massa lacus lacus vitae placerat et
+    </textarea>
+    <br />
+    Адрес проживания: 
+    <b>
+      7426 Suspendisse Dr
+    </b>
+    <br />
+    Город: 
+    <b>
+      Bradford
+    </b>
+    <br />
+    Провинция/штат: 
+    <b>
+      TX
+    </b>
+    <br />
+    Индекс: 
+    <b>
+      14745
+    </b>
+    <br />
+  </p>
+</div>
+`;
+
+exports[`Person info should bs rendered 2`] = `null`;

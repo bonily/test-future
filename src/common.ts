@@ -1,9 +1,8 @@
-/* eslint-disable no-console */
 import {PersonType} from './types';
 import {Values} from './blocks/person-form/person-form';
 import {SORT_TYPES} from "./const";
 
-export const extend = (a : any, b: unknown): any => {
+export const extend = (a : any, b: any): any => {
   return Object.assign({}, a, b);
 };
 
@@ -28,7 +27,6 @@ export const noop = () : void => {
 };
 
 export const getFilteredPersons = (persons : PersonType[], str = ``):PersonType[] => {
-  console.log(str);
   return persons.filter((person) =>
     person.firstName.toLowerCase().indexOf(str) > -1 ||
     String(person.id).indexOf(str) > -1 ||

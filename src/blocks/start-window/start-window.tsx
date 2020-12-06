@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, {useEffect, useState} from 'react';
 import styled, {keyframes} from 'styled-components';
 import {DATA_SIZE} from '../../const';
@@ -72,7 +71,6 @@ interface Props {
 const StartWindow: React.FunctionComponent<Props> = (props: Props) => {
   const [loadingStatus, setLoadingStatus] = useState(false);
   const {error, onDataSizeButtonClick, setError} = props;
-  console.log(error);
 
   useEffect(() => {
     const timer = setInterval(() => {

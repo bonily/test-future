@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paginate block should be rendered 1`] = `
+<nav
+  className="sc-bdfBwQ cvWBOr"
+>
+  <ul
+    className="sc-gsTCUz kIEiKe"
+  >
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm iKQuvh"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        3
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        5
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        6
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        7
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        8
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        9
+      </a>
+    </li>
+    <li
+      className="sc-dlfnbm kKVmcD"
+    >
+      <a
+        className="sc-hKgILt gWxVff"
+        href="#!"
+        onClick={[Function]}
+      >
+        10
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

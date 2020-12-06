@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header shiold render Header block 1`] = `
+exports[`Header should render Header block 1`] = `
 Array [
   " ",
   <form
@@ -14,6 +14,7 @@ Array [
     />
     <button
       className="sc-hKgILt fzCSQO"
+      name="find-button"
       onClick={[Function]}
       type="submit"
     >
@@ -21,6 +22,7 @@ Array [
     </button>
     <button
       className="sc-hKgILt fzCSQO"
+      id="new-person"
       onClick={[Function]}
       type="button"
     >

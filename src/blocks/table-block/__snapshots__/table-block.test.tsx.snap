@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person form component shoul be render with person array length < 0 1`] = `
+<table
+  className="sc-dlfnbm kIMfcW"
+>
+  <colgroup>
+    <col
+      style={
+        Object {
+          "background": "yellow",
+        }
+      }
+    />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr
+      className="sc-hKgILt"
+    >
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        id
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        firstName
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        lastName
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        email
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon--active.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        phone
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+    </tr>
+    <tr
+      className="sc-hKgILt"
+    >
+      <td
+        className="sc-eCssSg fGPNoo"
+        colSpan={5}
+        style={
+          Object {
+            "background": "pink",
+          }
+        }
+      >
+        Ничего не найдено
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Person form component should be render with person array length > 0 1`] = `
+<table
+  className="sc-dlfnbm kIMfcW"
+>
+  <colgroup>
+    <col
+      style={
+        Object {
+          "background": "yellow",
+        }
+      }
+    />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr
+      className="sc-hKgILt"
+    >
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        id
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        firstName
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        lastName
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        email
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon--active.svg"
+          width="18px"
+        />
+      </th>
+      <th
+        className="sc-bdfBwQ khoPZA"
+        onClick={[Function]}
+      >
+        phone
+        <img
+          className="sc-gsTCUz bqElTy"
+          height="18px"
+          src="./img/sort-icon.svg"
+          width="18px"
+        />
+      </th>
+    </tr>
+    <tr
+      className="sc-hKgILt"
+      onClick={[Function]}
+    >
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        714
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        Jeri
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        Wittcop
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        MRamsey@scelerisque.com
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        (731)368-3302
+      </td>
+    </tr>
+    <tr
+      className="sc-hKgILt"
+      onClick={[Function]}
+    >
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        120
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        Bonya
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        Wittcop
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        MRamsey@scelerisque.com
+      </td>
+      <td
+        className="sc-eCssSg fGPNoo"
+      >
+        (731)368-3302
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

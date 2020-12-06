@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import axios from "axios";
 import {ERROR_TYPES} from "./const";
 
@@ -6,7 +5,7 @@ import {ERROR_TYPES} from "./const";
 export const createApi = (onNetworkError) => {
   const api = axios.create({
     baseURL: `http://www.filltext.com`,
-    timeout: 10000,
+    timeout: 8000,
     withCredentials: false,
   });
 
