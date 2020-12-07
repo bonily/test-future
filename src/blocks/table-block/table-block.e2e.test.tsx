@@ -39,7 +39,7 @@ const sortType = `email`;
 
 it(`Click on line with person information should render special box with information about person`, () => {
   const onPersonTrClick = jest.fn();
-  2;
+
   render(<TableBlock
     persons = {persons}
     sortType = {sortType}

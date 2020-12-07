@@ -88,7 +88,7 @@ const StartWindow: React.FunctionComponent<Props> = (props: Props) => {
       {loadingStatus ?
         <LoadDiv>
           {error ?
-            <LoadText>Что-то пошла не так :( Текст ошибки {error}</LoadText> :
+            <LoadText>Что-то пошло не так :( Текст ошибки {error}</LoadText> :
             <><LoadText>
               Загрузка
             </LoadText>

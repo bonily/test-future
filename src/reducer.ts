@@ -4,6 +4,7 @@ import {PersonType} from './types';
 import {extend, castFormValueToPersonType} from './common';
 import {DATA_SIZE, DATA_URL} from './const';
 import {Values} from './blocks/person-form/person-form';
+import {AxiosResponse} from 'axios';
 
 export interface AppStateType {
   persons: PersonType[] | any,
@@ -51,7 +52,7 @@ const ActionCreator = {
       payload: filter
     };
   },
-  setError: (error: string): {type: string, payload: string} => {
+  setError: (error: string | number): {type: string, payload: string | number} => {
     return {
       type: ActionType.SET_ERROR,
       payload: error
@@ -73,16 +74,16 @@ const ActionCreator = {
 type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppStateType, any, Action<string>>
 
 const Operation = {
-  loadPersons: (size: string) => (dispatch: (arg0: { type: string; payload?: PersonType[]; }) => void, _getState: () => void, api: { get: (arg0: string) => Promise<PersonType[]>; }) => {
+  loadPersons: (size: string) : AppThunk => (dispatch: (arg0: { type: string; payload?: PersonType[]; }) => void, _getState: () => void, api: { get: (arg0: string) => Promise<AxiosResponse>; }) => {
     if (size === DATA_SIZE.SMALL) {
       return api.get(DATA_URL.SMALL)
-      .then((response : any) => {
+      .then((response : AxiosResponse<PersonType[]>) => {
         dispatch(ActionCreator.loadPersons((response.data)));
         dispatch(ActionCreator.changeStartStatus());
       });
     } else {
       return api.get(DATA_URL.ALL)
-      .then((response : any) => {
+      .then((response : AxiosResponse<PersonType[]>) => {
         dispatch(ActionCreator.loadPersons((response.data)));
         dispatch(ActionCreator.changeStartStatus());
       });

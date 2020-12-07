@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {PersonType} from './types';
 import {Values} from './blocks/person-form/person-form';
 import {SORT_TYPES} from "./const";
@@ -7,19 +8,20 @@ export const extend = (a : any, b: any): any => {
 };
 
 export const getPersonsBySortType = (persons : PersonType[], sortType : string, ascending : boolean): PersonType[] => {
+  const copyArray = persons.slice();
   switch (sortType) {
     case SORT_TYPES.FIRST_NAME:
-      return persons.sort((a, b) => ascending ? a.firstName.localeCompare(b.firstName) : b.firstName.localeCompare(a.firstName)).slice();
+      return copyArray.sort((a, b) => ascending ? a.firstName.localeCompare(b.firstName) : b.firstName.localeCompare(a.firstName));
     case SORT_TYPES.LAST_NAME:
-      return persons.sort((a, b) => ascending ? a.lastName.localeCompare(b.lastName) : b.lastName.localeCompare(a.lastName)).slice();
+      return copyArray.sort((a, b) => ascending ? a.lastName.localeCompare(b.lastName) : b.lastName.localeCompare(a.lastName));
     case SORT_TYPES.EMAIL:
-      return persons.sort((a, b) => ascending ? a.email.localeCompare(b.email) : b.email.localeCompare(a.email)).slice();
+      return copyArray.sort((a, b) => ascending ? a.email.localeCompare(b.email) : b.email.localeCompare(a.email));
     case SORT_TYPES.ID:
-      return persons.sort((a, b) => ascending ? a.id - b.id : b.id - a.id).slice();
+      return copyArray.sort((a, b) => ascending ? a.id - b.id : b.id - a.id);
     case SORT_TYPES.PHONE:
-      return persons.sort((a, b) => ascending ? a.phone.localeCompare(b.phone) : b.phone.localeCompare(a.phone)).slice();
+      return copyArray.sort((a, b) => ascending ? a.phone.localeCompare(b.phone) : b.phone.localeCompare(a.phone));
   }
-  return persons.slice();
+  return copyArray;
 };
 
 export const noop = () : void => {
@@ -27,6 +29,7 @@ export const noop = () : void => {
 };
 
 export const getFilteredPersons = (persons : PersonType[], str = ``):PersonType[] => {
+  console.log(str);
   return persons.filter((person) =>
     person.firstName.toLowerCase().indexOf(str) > -1 ||
     String(person.id).indexOf(str) > -1 ||
@@ -39,11 +42,6 @@ export const getFilteredPersons = (persons : PersonType[], str = ``):PersonType[
     person.address.city.toLowerCase().indexOf(str) > -1);
 };
 
-// export const updateFavoriteStatus = (persons : PersonType[], id : number):PersonType[] => {
-//   const index = persons.findIndex((person) => person.id === id);
-//   persons[index].favourite = !persons[index].favourite;
-//   return persons;
-// };
 
 export const castFormValueToPersonType = (value: Values) : PersonType => {
   return {

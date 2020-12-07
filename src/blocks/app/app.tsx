@@ -19,7 +19,7 @@ interface MapStatePropsType {
 
 interface MapDispatchToPropsType {
   onSortTitleClick: (sortType: string, isAscending: boolean) => void,
-  onInputChange: (arg0: string) => void,
+  onInputChange: (str: string) => void,
   onDataSizeButtonClick: (sizeType: string) => void,
   setError: (error: string) => void,
   onAddNewPersonButtonClick: (value : Values) => void

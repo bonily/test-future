@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const onNetworkError = (error: string) => {
+const onNetworkError = (error: string | number) => {
   store.dispatch(ActionCreator.setError(error));
 };
 

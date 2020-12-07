@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios, {AxiosError, AxiosInstance, AxiosResponse} from "axios";
 import {ERROR_TYPES} from "./const";
 
 
-export const createApi = (onNetworkError) => {
+export const createApi = (onNetworkError : (error: string | number) => void) : AxiosInstance => {
   const api = axios.create({
     baseURL: `http://www.filltext.com`,
     timeout: 8000,
@@ -10,11 +10,11 @@ export const createApi = (onNetworkError) => {
   });
 
 
-  const onSussess = (response) => {
+  const onSussess = (response : AxiosResponse) => {
     return response;
   };
 
-  const onFail = (err) => {
+  const onFail = (err: AxiosError) => {
     const {response} = err;
 
     if (err.message === ERROR_TYPES.NETWORK) {
